@@ -5,7 +5,7 @@ use warnings;
 use LWP::Simple;
 use XML::Simple;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 
 sub new {
@@ -207,7 +207,7 @@ C<$um-E<gt>my_info();> - Getting info about current user.
 
 =item *
 
-C<$um-E<gt>check_user({login => 'your@email.com', password => 'yourpassword'});> - Logining to system via automated API
+C<$um-E<gt>check_user({params..});> - Checking if the user you want to transfer to exists
 
 
 =over 8
